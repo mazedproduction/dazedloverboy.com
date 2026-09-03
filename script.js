@@ -1,14 +1,24 @@
-const menuButton = document.querySelector('.menu-toggle');
-const menu = document.querySelector('.site-menu');
-const menuLinks = document.querySelectorAll('.site-menu a');
+const entry = document.querySelector('#entry-screen');
+const archive = document.querySelector('#archive');
+const enterButton = document.querySelector('[data-enter]');
+const indexToggle = document.querySelector('[data-index-toggle]');
+const indexPanel = document.querySelector('[data-index-panel]');
 
-function setMenu(open){
-  menu.classList.toggle('open', open);
-  menu.setAttribute('aria-hidden', String(!open));
-  menuButton.setAttribute('aria-expanded', String(open));
-  menuButton.textContent = open ? 'Close' : 'Menu';
+function enterArchive(){
+  entry.style.display = 'none';
+  archive.classList.add('visible');
+  archive.setAttribute('aria-hidden','false');
+  window.scrollTo({top:0,behavior:'auto'});
+}
+
+function setIndex(open){
+  indexPanel.classList.toggle('open',open);
+  indexPanel.setAttribute('aria-hidden',String(!open));
+  indexToggle.textContent = open ? 'CLOSE' : 'INDEX';
   document.body.style.overflow = open ? 'hidden' : '';
 }
 
-menuButton?.addEventListener('click', () => setMenu(!menu.classList.contains('open')));
-menuLinks.forEach(link => link.addEventListener('click', () => setMenu(false)));
+enterButton?.addEventListener('click',enterArchive);
+document.querySelector('.entry-name')?.addEventListener('click',(event)=>{event.preventDefault();enterArchive();});
+indexToggle?.addEventListener('click',()=>setIndex(!indexPanel.classList.contains('open')));
+indexPanel?.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>setIndex(false)));
