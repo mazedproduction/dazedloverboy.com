@@ -27,7 +27,7 @@ a{color:inherit;text-decoration:none}
 .simple-content h1{margin:0;font-size:13px;letter-spacing:.08em;font-weight:500}
 .simple-content p{margin:0;font-family:"Libre Caslon Display",Georgia,serif;font-size:clamp(72px,10vw,160px);line-height:.9;letter-spacing:-.04em}
 
-footer{padding:0 26px 18px;font-size:11px;letter-spacing:.06em}
+footer{padding:0 26px 18px;font-size:11px;letter-spacing:.06em;text-align:center}
 
 @media(max-width:900px){
   .site-header{padding:22px 18px 16px;gap:18px}
