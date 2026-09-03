@@ -1,3 +1,5 @@
+document.querySelector('.bottom-monogram')?.remove();
+
 const tabLinks = document.querySelectorAll('[data-tab-link]');
 const tabPanels = document.querySelectorAll('[data-tab-panel]');
 
