@@ -65,3 +65,7 @@ footer{display:flex;justify-content:center;align-items:flex-end;padding:0 26px 1
   .simple-content p{font-size:clamp(64px,22vw,110px)}
   footer{padding:0 14px 12px;font-size:10px}
 }
+
+#about{overflow-y:auto}
+#about .simple-content{height:auto;min-height:100%}
+#about .about-bio{max-width:760px;min-width:0;font-size:clamp(24px,2.4vw,36px);line-height:1.4;letter-spacing:0;overflow-wrap:break-word}
