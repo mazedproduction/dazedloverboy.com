@@ -7,25 +7,28 @@
   <title>Dazed Lover Boy</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Libre+Caslon+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Libre+Caslon+Display&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <section class="entry-screen" id="entry-screen" aria-label="Enter Dazed Lover Boy">
-    <div class="paper-noise" aria-hidden="true"></div>
-    <a class="entry-name" href="#archive">DAZED LOVER BOY</a>
+    <a class="dlb-logo entry-logo" href="#archive" aria-label="Dazed Lover Boy home">
+      <span class="logo-dazed">dazed</span><span class="logo-loverboy">loverboy</span>
+    </a>
+
     <div class="entry-art" aria-label="Artwork placeholder">
-      <div class="entry-art-inner">
-        <span>IMAGE PLACEHOLDER</span>
-      </div>
+      <div class="entry-art-inner"><span>IMAGE PLACEHOLDER</span></div>
     </div>
+
     <button class="enter-button" type="button" data-enter>ENTER</button>
     <div class="entry-footer">© 2026 DAZED LOVER BOY</div>
   </section>
 
   <main class="archive-page" id="archive" aria-hidden="true">
     <header class="archive-header">
-      <a href="#top" class="archive-brand">DAZED LOVER BOY</a>
+      <a href="#top" class="dlb-logo archive-brand" aria-label="Dazed Lover Boy home">
+        <span class="logo-dazed">dazed</span><span class="logo-loverboy">loverboy</span>
+      </a>
       <button class="index-toggle" type="button" data-index-toggle>INDEX</button>
     </header>
 
@@ -62,21 +65,11 @@
     </section>
 
     <section class="work-view">
-      <div class="paper-noise" aria-hidden="true"></div>
-      <div class="work-meta">
-        <span>SELECTED WORK</span>
-        <span>2026</span>
-      </div>
-
+      <div class="work-meta"><span>SELECTED WORK</span><span>2026</span></div>
       <div class="work-stage">
-        <article class="work-frame work-frame-large">
-          <div class="placeholder placeholder-a"><span>PHOTOGRAPHY</span></div>
-        </article>
-        <article class="work-frame work-frame-small">
-          <div class="placeholder placeholder-b"><span>POETRY / PAGE</span></div>
-        </article>
+        <article class="work-frame work-frame-large"><div class="placeholder placeholder-a"><span>PHOTOGRAPHY</span></div></article>
+        <article class="work-frame work-frame-small"><div class="placeholder placeholder-b"><span>POETRY / PAGE</span></div></article>
       </div>
-
       <div class="work-caption">
         <p>Photography, poetry, films and fragments.</p>
         <p>A personal visual archive.</p>
