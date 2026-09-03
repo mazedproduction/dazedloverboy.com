@@ -3,79 +3,69 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Dazed Lover Boy — photography, poetry, films and fragments." />
+  <meta name="description" content="Dazed Lover Boy — selected work, prints and about." />
   <title>Dazed Lover Boy</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Libre+Caslon+Display&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <section class="entry-screen" id="entry-screen" aria-label="Enter Dazed Lover Boy">
-    <a class="dlb-logo entry-logo" href="#archive" aria-label="Dazed Lover Boy home">
+  <header class="site-header">
+    <a class="dlb-logo" href="#top" aria-label="Dazed Lover Boy home">
       <span class="logo-dazed">dazed</span><span class="logo-loverboy">loverboy</span>
     </a>
+    <div class="header-meta">PARIS / 2026</div>
+  </header>
 
-    <div class="entry-art" aria-label="Artwork placeholder">
-      <div class="entry-art-inner"><span>IMAGE PLACEHOLDER</span></div>
-    </div>
-
-    <button class="enter-button" type="button" data-enter>ENTER</button>
-    <div class="entry-footer">© 2026 DAZED LOVER BOY</div>
-  </section>
-
-  <main class="archive-page" id="archive" aria-hidden="true">
-    <header class="archive-header">
-      <a href="#top" class="dlb-logo archive-brand" aria-label="Dazed Lover Boy home">
-        <span class="logo-dazed">dazed</span><span class="logo-loverboy">loverboy</span>
+  <main id="top">
+    <nav class="mega-menu" aria-label="Main navigation">
+      <a class="mega-link" href="#selected-work" data-label="01">
+        <span class="mega-index">01</span>
+        <span class="mega-title">SELECTED WORK</span>
+        <span class="mega-arrow">↗</span>
       </a>
-      <button class="index-toggle" type="button" data-index-toggle>INDEX</button>
-    </header>
+      <a class="mega-link" href="#prints" data-label="02">
+        <span class="mega-index">02</span>
+        <span class="mega-title">PRINTS</span>
+        <span class="mega-arrow">↗</span>
+      </a>
+      <a class="mega-link" href="#about" data-label="03">
+        <span class="mega-index">03</span>
+        <span class="mega-title">ABOUT</span>
+        <span class="mega-arrow">↗</span>
+      </a>
+    </nav>
 
-    <section class="index-panel" data-index-panel aria-hidden="true">
-      <div class="index-columns">
-        <div class="index-group">
-          <h2>PHOTOGRAPHY</h2>
-          <a href="#">SELECTED PHOTOGRAPHS — 2026</a>
-          <a href="#">DAZED LOVER BOY I — 2026</a>
-          <a href="#">PORTRAITS — 2026</a>
-        </div>
-        <div class="index-group">
-          <h2>POETRY</h2>
-          <a href="#">DAZED — 2026</a>
-          <a href="#">LOVER — 2026</a>
-          <a href="#">BOY — 2026</a>
-        </div>
-        <div class="index-group">
-          <h2>FILMS</h2>
-          <a href="#">MOVING IMAGE I — 2026</a>
-          <a href="#">FRAGMENTS IN MOTION — 2026</a>
-        </div>
-        <div class="index-group">
-          <h2>FRAGMENTS</h2>
-          <a href="#">NOTES — 2026</a>
-          <a href="#">PAGES — 2026</a>
-          <a href="#">DRAWINGS — 2026</a>
-        </div>
+    <section class="content-section" id="selected-work">
+      <div class="section-label">SELECTED WORK</div>
+      <div class="section-placeholder">
+        <p>Photography, poetry, films and fragments.</p>
+        <span>Work will be added here.</span>
       </div>
-      <footer class="index-footer">
-        <span>© 2026 DAZED LOVER BOY</span>
-        <a href="mailto:contact@dazedloverboy.com">CONTACT</a>
-      </footer>
     </section>
 
-    <section class="work-view">
-      <div class="work-meta"><span>SELECTED WORK</span><span>2026</span></div>
-      <div class="work-stage">
-        <article class="work-frame work-frame-large"><div class="placeholder placeholder-a"><span>PHOTOGRAPHY</span></div></article>
-        <article class="work-frame work-frame-small"><div class="placeholder placeholder-b"><span>POETRY / PAGE</span></div></article>
+    <section class="content-section" id="prints">
+      <div class="section-label">PRINTS</div>
+      <div class="section-placeholder">
+        <p>Limited editions and printed matter.</p>
+        <span>Prints will be added here.</span>
       </div>
-      <div class="work-caption">
-        <p>Photography, poetry, films and fragments.</p>
-        <p>A personal visual archive.</p>
+    </section>
+
+    <section class="content-section about-section" id="about">
+      <div class="section-label">ABOUT</div>
+      <div class="about-copy">
+        <p>Dazed Lover Boy is a personal archive of photography, poetry, films and fragments.</p>
       </div>
     </section>
   </main>
+
+  <footer>
+    <span>© 2026 DAZED LOVER BOY</span>
+    <a href="mailto:contact@dazedloverboy.com">CONTACT</a>
+    <a href="#top">BACK TO TOP ↑</a>
+  </footer>
 
   <script src="script.js"></script>
 </body>
