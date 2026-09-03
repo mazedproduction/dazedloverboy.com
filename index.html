@@ -7,57 +7,80 @@
   <title>Dazed Lover Boy</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <a class="dlb-logo" href="#top" aria-label="Dazed Lover Boy home">
+  <header class="site-header" id="top">
+    <a class="dlb-logo" href="#selected-work" aria-label="Dazed Lover Boy home">
       <span class="logo-dazed">dazed</span><span class="logo-loverboy">loverboy</span>
     </a>
-    <div class="header-meta">PARIS / 2026</div>
+
+    <nav class="top-nav" aria-label="Main navigation">
+      <a class="active" href="#selected-work">SELECTED WORK</a>
+      <a href="#about">ABOUT</a>
+      <a href="#prints">PRINTS</a>
+    </nav>
   </header>
 
-  <main id="top">
-    <nav class="mega-menu" aria-label="Main navigation">
-      <a class="mega-link" href="#selected-work" data-label="01">
-        <span class="mega-index">01</span>
-        <span class="mega-title">SELECTED WORK</span>
-        <span class="mega-arrow">↗</span>
-      </a>
-      <a class="mega-link" href="#prints" data-label="02">
-        <span class="mega-index">02</span>
-        <span class="mega-title">PRINTS</span>
-        <span class="mega-arrow">↗</span>
-      </a>
-      <a class="mega-link" href="#about" data-label="03">
-        <span class="mega-index">03</span>
-        <span class="mega-title">ABOUT</span>
-        <span class="mega-arrow">↗</span>
-      </a>
-    </nav>
+  <main>
+    <section class="selected-work" id="selected-work">
+      <div class="work-columns">
+        <div class="work-column">
+          <h2>BOOKS</h2>
+          <a href="#">BLANK</a>
+          <a href="#">BLANK</a>
+          <a href="#">BLANK</a>
+          <a href="#">BLANK</a>
+          <a href="#">BLANK</a>
+        </div>
 
-    <section class="content-section" id="selected-work">
-      <div class="section-label">SELECTED WORK</div>
-      <div class="section-placeholder">
-        <p>Photography, poetry, films and fragments.</p>
-        <span>Work will be added here.</span>
+        <div class="work-column">
+          <h2>PHOTOGRAPHY</h2>
+          <a href="#">BLANK</a>
+          <a href="#">BLANK</a>
+          <a href="#">BLANK</a>
+          <a href="#">BLANK</a>
+          <a href="#">BLANK</a>
+          <a href="#">BLANK</a>
+          <a href="#">BLANK</a>
+          <a href="#">BLANK</a>
+          <a href="#">BLANK</a>
+        </div>
+
+        <div class="work-column">
+          <h2>EXHIBITIONS,<br>INSTALLATIONS &<br>SCULPTURE</h2>
+          <a href="#">BLANK</a>
+          <a href="#">BLANK</a>
+          <a href="#">BLANK</a>
+          <a href="#">BLANK</a>
+          <a href="#">BLANK</a>
+          <a href="#">BLANK</a>
+        </div>
+
+        <div class="work-column">
+          <h2>FILMS</h2>
+          <a href="#">BLANK</a>
+          <a href="#">BLANK</a>
+          <a href="#">BLANK</a>
+          <a href="#">BLANK</a>
+          <a href="#">BLANK</a>
+          <a href="#">BLANK</a>
+          <a href="#">BLANK</a>
+          <a href="#">BLANK</a>
+          <a href="#">BLANK</a>
+        </div>
       </div>
     </section>
 
-    <section class="content-section" id="prints">
-      <div class="section-label">PRINTS</div>
-      <div class="section-placeholder">
-        <p>Limited editions and printed matter.</p>
-        <span>Prints will be added here.</span>
-      </div>
+    <section class="simple-section" id="prints">
+      <span class="simple-label">PRINTS</span>
+      <p>BLANK</p>
     </section>
 
-    <section class="content-section about-section" id="about">
-      <div class="section-label">ABOUT</div>
-      <div class="about-copy">
-        <p>Dazed Lover Boy is a personal archive of photography, poetry, films and fragments.</p>
-      </div>
+    <section class="simple-section" id="about">
+      <span class="simple-label">ABOUT</span>
+      <p>BLANK</p>
     </section>
   </main>
 
@@ -66,7 +89,5 @@
     <a href="mailto:contact@dazedloverboy.com">CONTACT</a>
     <a href="#top">BACK TO TOP ↑</a>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
