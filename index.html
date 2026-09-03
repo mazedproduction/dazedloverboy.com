@@ -13,65 +13,44 @@
 <body>
   <div class="site-shell">
     <header class="site-header">
-      <a class="dlb-logo" href="#" aria-label="Dazed Lover Boy home" data-tab-link="selected-work">
-        <span class="logo-dazed">dazed</span><span class="logo-lover">lover</span><span class="logo-boy">boy</span>
-      </a>
+      <div class="brand-lockup">
+        <a class="dlb-logo" href="#" aria-label="Dazed Lover Boy home" data-tab-link="selected-work">
+          <span class="logo-dazed">dazed</span><span class="logo-lover">lover</span><span class="logo-boy">boy</span>
+        </a>
+        <img class="header-symbol" alt="" aria-hidden="true" src="data:image/png;base64,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" />
+      </div>
 
       <nav class="top-nav" aria-label="Main navigation">
         <a class="active" href="#selected-work" data-tab-link="selected-work">SELECTED WORK</a>
         <a href="#prints" data-tab-link="prints">PRINTS</a>
         <a href="#about" data-tab-link="about">ABOUT</a>
-        <a href="https://www.instagram.com/dazedloverboy/" target="_blank" rel="noopener noreferrer" aria-label="Instagram — @dazedloverboy">
-          <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" style="display:block">
-            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
-            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
-          </svg>
-        </a>
+        <span class="instagram-icon" aria-label="Instagram" role="img">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.7" r="1.1" fill="currentColor"/></svg>
+        </span>
       </nav>
     </header>
 
     <main class="tab-stage">
       <section class="tab-panel active" id="selected-work" data-tab-panel="selected-work" aria-hidden="false">
         <div class="work-columns">
-          <div class="work-column">
-            <h2>BOOKS</h2>
-            <a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a>
-          </div>
-
-          <div class="work-column">
-            <h2>PHOTOGRAPHY</h2>
-            <a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a>
-          </div>
-
-          <div class="work-column">
-            <h2>EXHIBITIONS</h2>
-            <a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a>
-          </div>
-
-          <div class="work-column">
-            <h2>FILMS</h2>
-            <a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a>
-          </div>
+          <div class="work-column"><h2>BOOKS</h2><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a></div>
+          <div class="work-column"><h2>PHOTOGRAPHY</h2><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a></div>
+          <div class="work-column"><h2>EXHIBITIONS</h2><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a></div>
+          <div class="work-column"><h2>FILMS</h2><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a></div>
         </div>
       </section>
 
-      <section class="tab-panel simple-panel" id="prints" data-tab-panel="prints" aria-hidden="true">
-        <div class="simple-content">
-          <h1>PRINTS</h1>
-          <p>BLANK</p>
-        </div>
-      </section>
-
-      <section class="tab-panel simple-panel" id="about" data-tab-panel="about" aria-hidden="true">
-        <div class="simple-content">
-          <h1>ABOUT</h1>
-          <p>BLANK</p>
-        </div>
-      </section>
+      <section class="tab-panel simple-panel" id="prints" data-tab-panel="prints" aria-hidden="true"><div class="simple-content"><h1>PRINTS</h1><p>BLANK</p></div></section>
+      <section class="tab-panel simple-panel" id="about" data-tab-panel="about" aria-hidden="true"><div class="simple-content"><h1>ABOUT</h1><p>BLANK</p></div></section>
     </main>
 
-    <footer>©2026 DAZED LOVER BOY</footer>
+    <footer>
+      <span class="copyright">©2026 DAZED LOVER BOY</span>
+      <div class="bottom-monogram" aria-hidden="true">
+        <span>D</span><span>L</span><span>B</span>
+      </div>
+      <span class="footer-spacer"></span>
+    </footer>
   </div>
 
   <script src="script.js"></script>
