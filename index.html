@@ -11,83 +11,62 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header" id="top">
-    <a class="dlb-logo" href="#selected-work" aria-label="Dazed Lover Boy home">
-      <span class="logo-dazed">dazed</span><span class="logo-loverboy">loverboy</span>
-    </a>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="dlb-logo" href="#" aria-label="Dazed Lover Boy home" data-tab-link="selected-work">
+        <span class="logo-dazed">dazed</span><span class="logo-loverboy">loverboy</span>
+      </a>
 
-    <nav class="top-nav" aria-label="Main navigation">
-      <a class="active" href="#selected-work">SELECTED WORK</a>
-      <a href="#about">ABOUT</a>
-      <a href="#prints">PRINTS</a>
-    </nav>
-  </header>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a class="active" href="#selected-work" data-tab-link="selected-work">SELECTED WORK</a>
+        <a href="#prints" data-tab-link="prints">PRINTS</a>
+        <a href="#about" data-tab-link="about">ABOUT</a>
+      </nav>
+    </header>
 
-  <main>
-    <section class="selected-work" id="selected-work">
-      <div class="work-columns">
-        <div class="work-column">
-          <h2>BOOKS</h2>
-          <a href="#">BLANK</a>
-          <a href="#">BLANK</a>
-          <a href="#">BLANK</a>
-          <a href="#">BLANK</a>
-          <a href="#">BLANK</a>
+    <main class="tab-stage">
+      <section class="tab-panel active" id="selected-work" data-tab-panel="selected-work" aria-hidden="false">
+        <div class="work-columns">
+          <div class="work-column">
+            <h2>BOOKS</h2>
+            <a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a>
+          </div>
+
+          <div class="work-column">
+            <h2>PHOTOGRAPHY</h2>
+            <a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a>
+          </div>
+
+          <div class="work-column">
+            <h2>EXHIBITIONS,<br>INSTALLATIONS &<br>SCULPTURE</h2>
+            <a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a>
+          </div>
+
+          <div class="work-column">
+            <h2>FILMS</h2>
+            <a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a><a href="#">BLANK</a>
+          </div>
         </div>
+      </section>
 
-        <div class="work-column">
-          <h2>PHOTOGRAPHY</h2>
-          <a href="#">BLANK</a>
-          <a href="#">BLANK</a>
-          <a href="#">BLANK</a>
-          <a href="#">BLANK</a>
-          <a href="#">BLANK</a>
-          <a href="#">BLANK</a>
-          <a href="#">BLANK</a>
-          <a href="#">BLANK</a>
-          <a href="#">BLANK</a>
+      <section class="tab-panel simple-panel" id="prints" data-tab-panel="prints" aria-hidden="true">
+        <div class="simple-content">
+          <h1>PRINTS</h1>
+          <p>BLANK</p>
         </div>
+      </section>
 
-        <div class="work-column">
-          <h2>EXHIBITIONS,<br>INSTALLATIONS &<br>SCULPTURE</h2>
-          <a href="#">BLANK</a>
-          <a href="#">BLANK</a>
-          <a href="#">BLANK</a>
-          <a href="#">BLANK</a>
-          <a href="#">BLANK</a>
-          <a href="#">BLANK</a>
+      <section class="tab-panel simple-panel" id="about" data-tab-panel="about" aria-hidden="true">
+        <div class="simple-content">
+          <h1>ABOUT</h1>
+          <p>BLANK</p>
         </div>
+      </section>
+    </main>
 
-        <div class="work-column">
-          <h2>FILMS</h2>
-          <a href="#">BLANK</a>
-          <a href="#">BLANK</a>
-          <a href="#">BLANK</a>
-          <a href="#">BLANK</a>
-          <a href="#">BLANK</a>
-          <a href="#">BLANK</a>
-          <a href="#">BLANK</a>
-          <a href="#">BLANK</a>
-          <a href="#">BLANK</a>
-        </div>
-      </div>
-    </section>
+    <footer>©2026 DAZED LOVER BOY</footer>
+  </div>
 
-    <section class="simple-section" id="prints">
-      <span class="simple-label">PRINTS</span>
-      <p>BLANK</p>
-    </section>
-
-    <section class="simple-section" id="about">
-      <span class="simple-label">ABOUT</span>
-      <p>BLANK</p>
-    </section>
-  </main>
-
-  <footer>
-    <span>© 2026 DAZED LOVER BOY</span>
-    <a href="mailto:contact@dazedloverboy.com">CONTACT</a>
-    <a href="#top">BACK TO TOP ↑</a>
-  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
