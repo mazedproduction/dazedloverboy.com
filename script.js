@@ -1,9 +1,15 @@
-document.querySelector('.bottom-monogram')?.remove();
+function removeBottomMonogram(){
+  document.querySelectorAll('.bottom-monogram').forEach(element => element.remove());
+}
+
+removeBottomMonogram();
 
 const tabLinks = document.querySelectorAll('[data-tab-link]');
 const tabPanels = document.querySelectorAll('[data-tab-panel]');
 
 function showTab(name){
+  removeBottomMonogram();
+
   tabLinks.forEach(link => {
     const active = link.dataset.tabLink === name;
     link.classList.toggle('active', active);
