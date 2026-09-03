@@ -6,7 +6,7 @@ function setMenu(open){
   menu.classList.toggle('open', open);
   menu.setAttribute('aria-hidden', String(!open));
   menuButton.setAttribute('aria-expanded', String(open));
-  menuButton.textContent = open ? 'CLOSE' : 'MENU';
+  menuButton.textContent = open ? 'Close' : 'Menu';
   document.body.style.overflow = open ? 'hidden' : '';
 }
 
