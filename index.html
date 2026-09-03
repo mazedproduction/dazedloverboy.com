@@ -3,110 +3,86 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Dazed Lover Boy — a personal archive of poetry, photography, fragments and films." />
+  <meta name="description" content="Dazed Lover Boy — photography, poetry, films and fragments." />
   <title>Dazed Lover Boy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Libre+Caslon+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#top">Dazed Lover Boy</a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">Menu</button>
-  </header>
-
-  <nav class="site-menu" id="site-menu" aria-hidden="true">
-    <div class="menu-grid">
-      <a href="#archive"><span>01</span>Archive</a>
-      <a href="#about"><span>02</span>About</a>
-      <a href="#contact"><span>03</span>Contact</a>
+  <section class="entry-screen" id="entry-screen" aria-label="Enter Dazed Lover Boy">
+    <div class="paper-noise" aria-hidden="true"></div>
+    <a class="entry-name" href="#archive">DAZED LOVER BOY</a>
+    <div class="entry-art" aria-label="Artwork placeholder">
+      <div class="entry-art-inner">
+        <span>IMAGE PLACEHOLDER</span>
+      </div>
     </div>
-  </nav>
+    <button class="enter-button" type="button" data-enter>ENTER</button>
+    <div class="entry-footer">© 2026 DAZED LOVER BOY</div>
+  </section>
 
-  <main id="top">
-    <section class="hero">
-      <h1>Dazed Lover Boy</h1>
-    </section>
+  <main class="archive-page" id="archive" aria-hidden="true">
+    <header class="archive-header">
+      <a href="#top" class="archive-brand">DAZED LOVER BOY</a>
+      <button class="index-toggle" type="button" data-index-toggle>INDEX</button>
+    </header>
 
-    <section class="pillars" aria-label="Dazed Lover Boy disciplines">
-      <div><strong>Poetry</strong><span>Words / notes / pages</span></div>
-      <div><strong>Photography</strong><span>People / places / memory</span></div>
-      <div><strong>Films</strong><span>Movement / sound / time</span></div>
-    </section>
-
-    <section class="statement">
-      <p>A personal archive of photographs, poems, films and fragments.</p>
-      <p>Made to document what changes, what stays, and what becomes clearer with time.</p>
-    </section>
-
-    <section class="archive" id="archive">
-      <div class="section-title"><span>The Archive</span><span>Selected forms</span></div>
-
-      <div class="archive-grid">
-        <a class="archive-card card-photo" href="#" aria-label="Photography placeholder">
-          <div class="card-media" aria-hidden="true"></div>
-          <div class="card-copy">
-            <span>Photography</span>
-            <strong>Images</strong>
-            <small>Selected work coming soon</small>
-          </div>
-        </a>
-
-        <a class="archive-card card-poetry" href="#" aria-label="Poetry placeholder">
-          <div class="card-media" aria-hidden="true"></div>
-          <div class="card-copy">
-            <span>Poetry</span>
-            <strong>Words</strong>
-            <small>Selected work coming soon</small>
-          </div>
-        </a>
-
-        <a class="archive-card card-film" href="#" aria-label="Film placeholder">
-          <div class="card-media" aria-hidden="true"></div>
-          <div class="card-copy">
-            <span>Films</span>
-            <strong>Moving image</strong>
-            <small>Selected work coming soon</small>
-          </div>
-        </a>
-
-        <a class="archive-card card-fragments" href="#" aria-label="Fragments placeholder">
-          <div class="card-media" aria-hidden="true"></div>
-          <div class="card-copy">
-            <span>Fragments</span>
-            <strong>Notes</strong>
-            <small>Selected work coming soon</small>
-          </div>
-        </a>
+    <section class="index-panel" data-index-panel aria-hidden="true">
+      <div class="index-columns">
+        <div class="index-group">
+          <h2>PHOTOGRAPHY</h2>
+          <a href="#">SELECTED PHOTOGRAPHS — 2026</a>
+          <a href="#">DAZED LOVER BOY I — 2026</a>
+          <a href="#">PORTRAITS — 2026</a>
+        </div>
+        <div class="index-group">
+          <h2>POETRY</h2>
+          <a href="#">DAZED — 2026</a>
+          <a href="#">LOVER — 2026</a>
+          <a href="#">BOY — 2026</a>
+        </div>
+        <div class="index-group">
+          <h2>FILMS</h2>
+          <a href="#">MOVING IMAGE I — 2026</a>
+          <a href="#">FRAGMENTS IN MOTION — 2026</a>
+        </div>
+        <div class="index-group">
+          <h2>FRAGMENTS</h2>
+          <a href="#">NOTES — 2026</a>
+          <a href="#">PAGES — 2026</a>
+          <a href="#">DRAWINGS — 2026</a>
+        </div>
       </div>
+      <footer class="index-footer">
+        <span>© 2026 DAZED LOVER BOY</span>
+        <a href="mailto:contact@dazedloverboy.com">CONTACT</a>
+      </footer>
     </section>
 
-    <section class="about" id="about">
-      <div class="section-title"><span>About</span><span>Dazed Lover Boy</span></div>
-      <div class="about-layout">
-        <h2>Photography for what I see.<br>Words for what I cannot photograph.</h2>
-        <p>Dazed Lover Boy is an evolving personal archive combining photography, poetry, films and fragments. The work sits somewhere between observation and autobiography.</p>
+    <section class="work-view">
+      <div class="paper-noise" aria-hidden="true"></div>
+      <div class="work-meta">
+        <span>SELECTED WORK</span>
+        <span>2026</span>
       </div>
-    </section>
 
-    <section class="index-list">
-      <div class="index-row"><span>01</span><strong>Poetry</strong><em>Text / notebooks / fragments</em></div>
-      <div class="index-row"><span>02</span><strong>Photography</strong><em>Portrait / documentary / personal</em></div>
-      <div class="index-row"><span>03</span><strong>Films</strong><em>Short films / moving image</em></div>
-      <div class="index-row"><span>04</span><strong>Fragments</strong><em>Pages / ideas / traces</em></div>
+      <div class="work-stage">
+        <article class="work-frame work-frame-large">
+          <div class="placeholder placeholder-a"><span>PHOTOGRAPHY</span></div>
+        </article>
+        <article class="work-frame work-frame-small">
+          <div class="placeholder placeholder-b"><span>POETRY / PAGE</span></div>
+        </article>
+      </div>
+
+      <div class="work-caption">
+        <p>Photography, poetry, films and fragments.</p>
+        <p>A personal visual archive.</p>
+      </div>
     </section>
   </main>
-
-  <footer id="contact">
-    <div class="footer-brand">Dazed Lover Boy</div>
-    <div class="footer-col">
-      <span>Follow</span>
-      <a href="#">Instagram</a>
-    </div>
-    <div class="footer-col">
-      <span>Contact</span>
-      <a href="mailto:contact@dazedloverboy.com">contact@dazedloverboy.com</a>
-    </div>
-    <a class="back-top" href="#top">Back to top ↑</a>
-  </footer>
 
   <script src="script.js"></script>
 </body>
