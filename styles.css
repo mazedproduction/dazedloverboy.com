@@ -66,7 +66,7 @@ footer{display:flex;justify-content:center;align-items:flex-end;padding:0 26px 1
 
 #about{overflow-y:auto}
 #about .simple-content{height:auto;min-height:100%;grid-template-columns:minmax(0,720px) minmax(260px,430px);gap:clamp(36px,5vw,88px);justify-content:center;align-items:start}
-#about .about-bio{min-width:0;font-size:clamp(17px,1.45vw,22px);line-height:1.55;letter-spacing:.01em;text-align:justify;text-align-last:left;overflow-wrap:break-word;opacity:.78}
+#about .about-bio{min-width:0;font-size:clamp(17px,1.45vw,22px);line-height:1.55;letter-spacing:.01em;text-align:justify;text-align-last:left;overflow-wrap:break-word;opacity:.64;text-shadow:.2px .15px 0 rgba(17,17,17,.14)}
 #about .about-photo{display:block;width:100%;height:auto;max-height:calc(100svh - 220px);object-fit:contain;object-position:top right}
 
 @media(max-width:760px){
