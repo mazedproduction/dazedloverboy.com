@@ -4,8 +4,9 @@ const tabLinks = document.querySelectorAll('[data-tab-link]');
 const tabPanels = document.querySelectorAll('[data-tab-panel]');
 
 function showTab(name){
+  const parentTab = name === 'le-vide-dune-ame-blanche-tournant-au-vert' ? 'selected-work' : name;
   tabLinks.forEach(link => {
-    const active = link.dataset.tabLink === name;
+    const active = link.dataset.tabLink === name || (link.closest('.top-nav') && link.dataset.tabLink === parentTab);
     link.classList.toggle('active', active);
   });
 
@@ -13,6 +14,7 @@ function showTab(name){
     const active = panel.dataset.tabPanel === name;
     panel.classList.toggle('active', active);
     panel.setAttribute('aria-hidden', String(!active));
+    if(active) panel.scrollTop = 0;
   });
 }
 
@@ -20,10 +22,12 @@ tabLinks.forEach(link => {
   link.addEventListener('click', event => {
     event.preventDefault();
     showTab(link.dataset.tabLink);
+    history.replaceState(null, '', `#${link.dataset.tabLink}`);
   });
 });
 
-showTab('selected-work');
+const initialTab = window.location.hash.slice(1);
+showTab(document.querySelector(`[data-tab-panel="${initialTab}"]`) ? initialTab : 'selected-work');
 
 const translations = {
   en: {
