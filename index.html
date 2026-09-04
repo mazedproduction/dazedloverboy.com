@@ -7,7 +7,7 @@
   <title>Dazed Lover Boy</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@300;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -50,12 +50,15 @@
               <p>Innocente, vide, presque anesthésiée — l’âme se retrouve confrontée à ses propres démons. Mais dans l’espace laissé par la disparition de l’autre, quelque chose commence lentement à germer. Ce recueil est l’archive d’une métamorphose : celle d’un garçon qui cherchait dans l’autre une raison de vivre et qui découvre, à travers l’écriture, une manière d’exister.</p>
             </div>
           </header>
-          <div class="project-gallery">
-            <figure><img src="assets/le-vide-01.jpeg" alt="Pages du recueil avec le texte Always with love" /></figure>
+          <div class="project-gallery" aria-label="Galerie du livre">
+            <figure class="active"><img src="assets/le-vide-01.jpeg" alt="Pages du recueil avec le texte Always with love" /></figure>
             <figure><img src="assets/le-vide-02.jpeg" alt="Pages du recueil avec le texte I feel empty" /></figure>
             <figure><img src="assets/le-vide-03.jpeg" alt="Pages du recueil autour des possibilités et de la réalité" /></figure>
             <figure><img src="assets/le-vide-04.jpeg" alt="Pages du recueil répétant Where did the love go" /></figure>
             <figure><img src="assets/le-vide-05.jpeg" alt="Pages du recueil autour du temps" /></figure>
+            <button class="gallery-control gallery-prev" type="button" aria-label="Image précédente">‹</button>
+            <button class="gallery-control gallery-next" type="button" aria-label="Image suivante">›</button>
+            <span class="gallery-count" aria-live="polite">1 / 5</span>
           </div>
         </article>
       </section>

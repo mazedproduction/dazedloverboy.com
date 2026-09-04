@@ -29,6 +29,19 @@ tabLinks.forEach(link => {
 const initialTab = window.location.hash.slice(1);
 showTab(document.querySelector(`[data-tab-panel="${initialTab}"]`) ? initialTab : 'selected-work');
 
+const gallerySlides = [...document.querySelectorAll('.project-gallery figure')];
+const galleryCount = document.querySelector('.gallery-count');
+let galleryIndex = 0;
+
+function showGallerySlide(index){
+  galleryIndex = (index + gallerySlides.length) % gallerySlides.length;
+  gallerySlides.forEach((slide, slideIndex) => slide.classList.toggle('active', slideIndex === galleryIndex));
+  galleryCount.textContent = `${galleryIndex + 1} / ${gallerySlides.length}`;
+}
+
+document.querySelector('.gallery-prev')?.addEventListener('click', () => showGallerySlide(galleryIndex - 1));
+document.querySelector('.gallery-next')?.addEventListener('click', () => showGallerySlide(galleryIndex + 1));
+
 const translations = {
   en: {
     aboutBio: "Dazed Lover Boy is a Paris-based storyteller working across writing, photography and theatre. Through his art, he creates worlds through which he can escape, understand himself and confront his fears. Words become a way of healing the soul; images, a way of exploring the world. Driven by curiosity, his work is born from a constant longing for elsewhere.",
