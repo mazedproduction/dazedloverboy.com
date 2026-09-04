@@ -28,18 +28,19 @@ a{color:inherit;text-decoration:none}
 
 .project-panel{overflow-y:auto;padding:48px 26px 80px}
 .project-page{width:min(1320px,100%);margin:0 auto;font-family:Poppins,Arial,sans-serif;font-size:15px;font-weight:300;line-height:27px;letter-spacing:1.05px}
-.project-intro{display:block;margin:0 auto clamp(64px,9vh,110px);width:min(1120px,88vw)}
-.project-intro h1{max-width:620px;margin:0 0 27px;font:inherit;font-weight:700}
-.project-copy{max-width:620px}
+.project-intro{display:block;margin:0 auto clamp(64px,9vh,110px);width:min(1185px,100%)}
+.project-intro h1{margin:0 0 27px;font:inherit;font-weight:700}
+.project-copy{width:100%}
 .project-copy p{margin:0 0 27px;text-align:justify;text-align-last:left}
 .project-copy em{font-style:italic}
-.project-gallery{position:relative;width:min(1185px,100%);aspect-ratio:1.64;margin:0 auto 32px;background:#fff}
+.project-gallery{position:relative;width:min(1185px,calc(100% - 112px));aspect-ratio:1.64;margin:0 auto 32px;background:#fff}
 .project-gallery figure{position:absolute;inset:0;display:none;margin:0}
 .project-gallery figure.active{display:block}
 .project-gallery img{display:block;width:100%;height:100%;object-fit:contain}
-.gallery-control{position:absolute;z-index:2;top:0;width:50%;height:100%;border:0;background:transparent;color:transparent;font:inherit;cursor:pointer}
-.gallery-prev{left:0;cursor:w-resize}
-.gallery-next{right:0;cursor:e-resize}
+.gallery-control{position:absolute;z-index:2;top:50%;width:44px;height:64px;padding:0;border:0;background:transparent;color:#111;font-family:Poppins,Arial,sans-serif;font-size:34px;font-weight:300;line-height:1;cursor:pointer;transform:translateY(-50%)}
+.gallery-control:hover{opacity:.5}
+.gallery-prev{left:-58px}
+.gallery-next{right:-58px}
 .gallery-count{position:absolute;z-index:3;right:0;bottom:-27px;font-size:10px;line-height:18px;letter-spacing:1.05px}
 
 .simple-panel{padding:40px 26px}
@@ -60,6 +61,9 @@ footer{display:flex;justify-content:center;align-items:flex-end;padding:0 26px 1
   #selected-work{padding:28px 18px 12px}
   .project-panel{padding:28px 18px 64px}
   .project-intro{width:100%;margin-bottom:64px}
+  .project-gallery{width:calc(100% - 88px)}
+  .gallery-prev{left:-48px}
+  .gallery-next{right:-48px}
   .work-columns{width:100%;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;overflow:auto;padding-right:4px}
   .simple-panel{padding:28px 18px}
   footer{padding:0 18px 14px}
@@ -69,14 +73,17 @@ footer{display:flex;justify-content:center;align-items:flex-end;padding:0 26px 1
   .site-header{display:grid;grid-template-columns:1fr;gap:16px;padding:16px 14px 12px}
   .brand-lockup{gap:10px;align-items:center}
   .site-logo{width:min(78vw,420px)}
-  .header-symbol{width:40px}
+  .header-symbol{display:none}
   .top-nav{width:100%;justify-content:space-between;gap:9px;font-size:11px;padding-top:0;align-items:center}
   .instagram-icon{width:16px;height:16px}
   #selected-work{padding:18px 14px 8px}
   .project-panel{padding:20px 14px 56px}
   .project-page{font-size:15px;line-height:27px}
   .project-intro{margin-bottom:48px}
-  .project-gallery{width:100%;aspect-ratio:1.414}
+  .project-gallery{width:calc(100% - 64px);aspect-ratio:1.414}
+  .gallery-control{width:32px;height:48px;font-size:28px}
+  .gallery-prev{left:-36px}
+  .gallery-next{right:-36px}
   .work-columns{grid-template-columns:1fr;gap:28px;overflow:auto}
   .work-column h2{font-size:15px;line-height:27px;margin-bottom:14px}
   .work-column a{font-size:10px;line-height:18px;margin-bottom:10px}
