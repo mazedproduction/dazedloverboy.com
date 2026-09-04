@@ -1,8 +1,9 @@
+document.querySelector('.bottom-monogram')?.remove();
+
 const tabLinks = document.querySelectorAll('[data-tab-link]');
 const tabPanels = document.querySelectorAll('[data-tab-panel]');
 
 function showTab(name){
-
   tabLinks.forEach(link => {
     const active = link.dataset.tabLink === name;
     link.classList.toggle('active', active);
@@ -26,7 +27,7 @@ showTab('selected-work');
 
 const translations = {
   en: {
-    aboutBio: "Nathan Martel - aka Dazed Lover Boy - is a storyteller based in Paris. He shares, through his art, a universe that allows him to escape, to understand himself and to face his fears. At heart, Nathan is an artist, with an extensive background in writing, photography and theater. The words as cure for the soul, the image as exploration of the world. Between curiosity and ambition, these desires are born of a craving for elsewhere.",
+    aboutBio: "Dazed Lover Boy is a Paris-based storyteller working across writing, photography and theatre. Through his art, he creates worlds through which he can escape, understand himself and confront his fears. Words become a way of healing the soul; images, a way of exploring the world. Driven by curiosity, his work is born from a constant longing for elsewhere.",
     selectedWork: 'SELECTED WORK', prints: 'PRINTS', about: 'ABOUT',
     books: 'BOOKS', photography: 'PHOTOGRAPHY', exhibitions: 'EXHIBITIONS',
     films: 'FILMS', blank: 'BLANK',
@@ -34,7 +35,7 @@ const translations = {
     description: 'Dazed Lover Boy — selected work, prints and about.'
   },
   fr: {
-    aboutBio: "Nathan Martel - alias Dazed Lover Boy - est un conteur basé à Paris. Il partage, à travers son art, un univers qui lui permet de s'évader, de se comprendre et d'affronter ses peurs. Passioné, Nathan est un artiste, doté d'une vaste expérience en écriture, photographie et théâtre. Les mots pour une guérison de l'âme, les images pour l'exploration du monde. Entre curiosité et ambition, ces envies naissent d'une envie pour l'ailleurs.",
+    aboutBio: "Dazed Lover Boy est un conteur basé à Paris, dont le travail se déploie entre l’écriture, la photographie et le théâtre. À travers son art, il crée des univers qui lui permettent de s’évader, de se comprendre et d’affronter ses peurs. Les mots deviennent un moyen de guérir l’âme ; les images, une manière d’explorer le monde. Porté par la curiosité, son travail naît d’un désir constant d’ailleurs.",
     selectedWork: 'SÉLECTION', prints: 'TIRAGES', about: 'À PROPOS',
     books: 'LIVRES', photography: 'PHOTOGRAPHIE', exhibitions: 'EXPOSITIONS',
     films: 'FILMS', blank: 'VIDE',
