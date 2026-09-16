@@ -33,7 +33,7 @@ a{color:inherit;text-decoration:none}
 .project-copy{width:100%}
 .project-copy p{margin:0 0 27px;text-align:justify;text-align-last:left}
 .project-copy em{font-style:italic}
-.project-gallery{position:relative;width:min(1185px,calc(100% - 112px));aspect-ratio:1.64;margin:0 auto 32px;background:#fff}
+.project-gallery{position:relative;width:min(1500px,calc(100vw - 164px));height:calc(100svh - 190px);min-height:360px;max-height:900px;margin:0 auto 32px;background:#fff}
 .project-gallery figure{position:absolute;inset:0;display:none;margin:0}
 .project-gallery figure.active{display:block}
 .project-gallery img{display:block;width:100%;height:100%;object-fit:contain}
@@ -61,7 +61,7 @@ footer{display:flex;justify-content:center;align-items:flex-end;padding:0 26px 1
   #selected-work{padding:28px 18px 12px}
   .project-panel{padding:28px 18px 64px}
   .project-intro{width:100%;margin-bottom:64px}
-  .project-gallery{width:calc(100% - 88px)}
+  .project-gallery{width:calc(100vw - 124px);height:calc(100svh - 155px);min-height:320px}
   .gallery-prev{left:-48px}
   .gallery-next{right:-48px}
   .work-columns{width:100%;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;overflow:auto;padding-right:4px}
@@ -80,7 +80,7 @@ footer{display:flex;justify-content:center;align-items:flex-end;padding:0 26px 1
   .project-panel{padding:20px 14px 56px}
   .project-page{font-size:15px;line-height:27px}
   .project-intro{margin-bottom:48px}
-  .project-gallery{width:calc(100% - 64px);aspect-ratio:1.414}
+  .project-gallery{width:calc(100vw - 92px);height:min(62svh,calc((100vw - 92px) / 1.414));min-height:220px}
   .gallery-control{width:32px;height:48px;font-size:28px}
   .gallery-prev{left:-36px}
   .gallery-next{right:-36px}
