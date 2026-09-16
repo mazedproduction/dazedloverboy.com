@@ -48,6 +48,9 @@ const translations = {
     selectedWork: 'SELECTED WORK', prints: 'PRINTS', about: 'ABOUT',
     books: 'BOOKS', photography: 'PHOTOGRAPHY', exhibitions: 'EXHIBITIONS',
     films: 'FILMS', blank: 'BLANK',
+    leVideDescriptionOne: '<em>Le Vide d’Une Ame Blanche Tournant au Vert</em> is the poetic journal of a soul that surrendered itself to love until it could no longer tell what still belonged to it. Written over several years, its poems and fragments trace an inner journey shaped by idealisation, dependence, anxiety, solitude and moments of realisation. Language searches for itself, thoughts repeat, and words scatter across the page as their author tries to understand what he feels and what he is becoming.',
+    leVideDescriptionTwo: 'Innocent, empty, almost numb, the soul finds itself confronted by its own demons. Yet in the space left by the other’s disappearance, something slowly begins to grow. This collection is the archive of a metamorphosis: that of a boy who sought in another person a reason to live and who discovers, through writing, a way to exist.',
+    leVideGallery: 'Book gallery', previousImage: 'Previous image', nextImage: 'Next image',
     navigation: 'Main navigation', home: 'Dazed Lover Boy home',
     description: 'Dazed Lover Boy — selected work, prints and about.'
   },
@@ -56,6 +59,9 @@ const translations = {
     selectedWork: 'SÉLECTION', prints: 'TIRAGES', about: 'À PROPOS',
     books: 'LIVRES', photography: 'PHOTOGRAPHIE', exhibitions: 'EXPOSITIONS',
     films: 'FILMS', blank: 'VIDE',
+    leVideDescriptionOne: '<em>Le Vide d’Une Ame Blanche Tournant au Vert</em> est le journal poétique d’une âme qui s’est abandonnée à l’amour au point de ne plus savoir ce qui lui appartient. Écrits au fil de plusieurs années, ses poèmes et fragments suivent un mouvement intérieur fait d’idéalisation, de dépendance, d’angoisse, de solitude et de prises de conscience. La langue se cherche, les pensées se répètent, les mots se dispersent sur la page tandis que leur auteur tente de comprendre ce qu’il ressent et ce qu’il devient.',
+    leVideDescriptionTwo: 'Innocente, vide, presque anesthésiée — l’âme se retrouve confrontée à ses propres démons. Mais dans l’espace laissé par la disparition de l’autre, quelque chose commence lentement à germer. Ce recueil est l’archive d’une métamorphose : celle d’un garçon qui cherchait dans l’autre une raison de vivre et qui découvre, à travers l’écriture, une manière d’exister.',
+    leVideGallery: 'Galerie du livre', previousImage: 'Image précédente', nextImage: 'Image suivante',
     navigation: 'Navigation principale', home: 'Accueil Dazed Lover Boy',
     description: 'Dazed Lover Boy — sélection de travaux, tirages et à propos.'
   }
@@ -67,7 +73,12 @@ function setLanguage(language){
   const copy = translations[language];
   document.documentElement.lang = language;
   document.querySelectorAll('[data-i18n]').forEach(element => {
-    element.textContent = copy[element.dataset.i18n];
+    const value = copy[element.dataset.i18n];
+    if (value.includes('<em>')) element.innerHTML = value;
+    else element.textContent = value;
+  });
+  document.querySelectorAll('[data-i18n-aria]').forEach(element => {
+    element.setAttribute('aria-label', copy[element.dataset.i18nAria]);
   });
   document.querySelector('.top-nav').setAttribute('aria-label', copy.navigation);
   document.querySelector('.dlb-logo').setAttribute('aria-label', copy.home);
